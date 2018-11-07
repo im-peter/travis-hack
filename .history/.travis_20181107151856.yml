@@ -7,11 +7,10 @@ cache:
   - node_modules
 
 before_install:
-  - echo before_install
+
 install:
-  - echo install
+
 script:
-  - echo script!
 
 deploy:
   provider: s3
