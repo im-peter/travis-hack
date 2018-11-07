@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: s3
+  access_key_id: AKIAJRNJAWH5WTT2BZFA
+  secret_access_key:
+    secure: FSqxl5CEU0ZGoahPtpq68mRKMKLiRnW2NxzfXXUYivDrLQq7bsFKoD13xC7yk4nM6uKyFHSnr7Yo3qE6XvwI3cahouXgrltqOkt8r/4EQHx8NzNNscpxoBd1el7XqqU/gsAjp6hCTkkBwVmOzcQsu1NsRRiRnpG2+owtPcQUhlM9iCuru1yGvNr8ZfPw87jL5nvqXVLYzwo2J3zCJuMzqZhTWRyp3I1PvG2E+yc5uk60kfrjRtmm2FR8XhDv3URsCUc26/rRFX0k/BZiIdVlCtDyVwlEszSXL+ddN39Wx+0Rb1EMmyMGgeAgXpUwjrd6yXVDvgvnVpzplI+Pk+jrIjRqzre4+9KOvyi5FSvMdjKuyM7U6ztWJidfY6XHX+9FbB2LYhk/+9jRe9pwMVjYQ35Zi8voCHEgfNlDB/wLMKLrUZRDqRwk5jL7wzEQrzd8NC9EsNg53rEC/kzHnHHo4vt0QGwrlfUv+NZuwUGIhw/Md2eUKER08LpX4hslrlKDexHqqPV5zUiK/7YXJ3aHX9jFp7cARyVe7i5bLhkXY94u7pdu5rgxMdwpbm7Awuhy57EZ1Taiod5aHpi0B4Ivvfx6c2IDotRWr12VzB/iaHoDVOSIMD7AZAVuk8S5NeIvcHLUBok+MvlgZcrTkeSdc/TT8FFkH8VDqAGz5/NlBVU=
+  bucket: travis-hack
+  local-dir: html
+  acl: public_read
+  on:
+    repo: im-peter/travis-hack
